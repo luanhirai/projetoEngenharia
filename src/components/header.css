@@ -85,19 +85,19 @@ header{
 
 @keyframes slideOut {
     from {
-        width: 200px; /* Começa com largura 200px */
+        width: 200px;
     }
     to {
-        width: 0; /* Termina com largura 0 */
+        width: 0;
     }
 }
 
 @keyframes slideIn {
     from {
-        width: 0; /* Começa com largura 0 */
+        width: 0;
     }
     to {
-        width: 200px; /* Termina com largura 200px */
+        width: 200px;
     }
 }
 
