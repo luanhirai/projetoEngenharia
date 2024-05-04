@@ -1,16 +1,24 @@
 import React, { useState } from "react";
 import "./header.css";
-import headerLogo from "../assets/logo-carim.jpg";
-import logoMenu from "../assets/logo-menu.png";
+import headerLogo from "../assets/logo-carim.jpg"
+import logoMenu from "../assets/logo-menu.png"
+
 
 export default function Header() {
-    const [menuAberto, setMenuAberto] = useState(false);
+    const [menuAberto, setEstadoMenu] = useState(false);
 
-    function alterarEstadoMenu() {
-        setMenuAberto(!menuAberto);
-        girarImagem(); // Chamando a função de girar a imagem ao alterar o estado do menu
+    function alterarEstadoMenu(){
+        setEstadoMenu(!menuAberto);
+        girarImagem();
     }
 
+    function abrirMenu() {
+        document.getElementsByClassName('.fundo-escuro').style.display = 'block';
+    }
+    function fecharMenu() {
+        document.getElementsByClassName('.fundo-escuro').style.display = 'none';
+    }
+    
     function girarImagem() {
         const logoMenuElement = document.querySelector('.logoMenu');
         if (menuAberto) {
@@ -20,14 +28,16 @@ export default function Header() {
         }
     }
 
+
     return (
         <header>
-            <div className="header-container">
+            <div className="header-container ">
                 <img className="headerLogo" src={headerLogo} alt="logo do Carim" />
+
                 <img className="logoMenu" onClick={alterarEstadoMenu} src={logoMenu} alt="logo do Menu" />
             </div>
             
-            <div className="header-container-menu">
+            <div className="header-container-menu ">
                 <nav className={menuAberto ? 'menu-aberto' : 'menu-fechado'}>
                     <ul className="header-lista">
                         <li><a href="#">Home</a></li>
@@ -37,6 +47,8 @@ export default function Header() {
                     </ul>
                 </nav>
             </div>
+
+            <div className={menuAberto ? 'fundo-escuro-open' : 'fundo-escuro-close'}></div>
         </header>
     );
 }

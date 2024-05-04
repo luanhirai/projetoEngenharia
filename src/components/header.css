@@ -101,7 +101,7 @@ header{
 
 @keyframes slideOut {
     from {
-        width: 200px;
+        width: 300px;
     }
     to {
         width: 0;
@@ -113,7 +113,7 @@ header{
         width: 0;
     }
     to {
-        width: 200px;
+        width: 300px;
     }
 }
 
