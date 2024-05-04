@@ -41,8 +41,6 @@ header{
 
 
 
-
-
 .header-lista {
     list-style-type: none;
     padding: 0;
@@ -59,15 +57,16 @@ header{
 
 .header-lista li {
     padding-top: 70px;
-    font-size: 30px;
-    transition: font-size 0.5s ease-in-out;
+    font-size: 25px;
+    border: 1px solid #A2238E;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    transition: border 0.7s, font-size 0.7s ease-in-out; /* Combine todas as transições em uma única regra */
 }
 
-
-.header-lista li:hover{
-    font-size: 35px;
-    transition: font-size 0.5s ease-in-out;
-
+.header-lista li:hover {
+    font-size: 30px;
+    border: 1px solid #b827a3;
 }
 
 
