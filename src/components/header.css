@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'roboto';
 }
 header{
     position: fixed;
@@ -17,10 +18,14 @@ header{
 
 }
 
-.logoMenu{
-    width: 35px;
-    height: 40px;
+.logoMenu {
+    width: 45px;
+    height: 50px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: transform 0.5s ease-in; /* Adiciona transição para a transformação */
 }
+
 
 .headerLogo{
     width: 100px;
@@ -50,17 +55,28 @@ header{
     text-transform: none;
 }
 
+
+
 .header-lista li {
     padding-top: 70px;
     font-size: 30px;
+    transition: font-size 0.5s ease-in-out;
 }
+
+
+.header-lista li:hover{
+    font-size: 35px;
+    transition: font-size 0.5s ease-in-out;
+
+}
+
 
 .menu-fechado {
     margin: 0;
     padding: 0;
     width: 0;
     height: 100vh;
-    transition: width 0.5s ease-out;
+    transition: width 0.7s ease-out;
     overflow: hidden; 
 }
 
@@ -76,11 +92,11 @@ header{
 
 
 .menu-aberto {
-    animation: slideIn 0.5s forwards;
+    animation: slideIn 0.7s forwards;
 }
 
 .menu-fechado {
-    animation: slideOut 0.5s forwards;
+    animation: slideOut 0.7s forwards;
 }
 
 @keyframes slideOut {
