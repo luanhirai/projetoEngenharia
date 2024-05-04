@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    position: fixed;
+    width: 100%;
+    margin-bottom: 100px;
+
+}
+
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #A2238E;
+
+}
+
+.logoMenu{
+    width: 35px;
+    height: 40px;
+}
+
+.headerLogo{
+    width: 100px;
+    height: 100px;
+}
+
+.header-container-menu{
+    background-color: #A2238E;
+    position: absolute;
+    width: max-content;
+    right: 0;
+}
+
+
+
+
+
+.header-lista {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+.header-lista li a{
+
+    color: white;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.menu-fechado{
+    margin: 0;
+    padding: 0;
+    display:none;
+}
+
+.menu-aberto{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    width: 70px;
+    transition: width 0.5s ease-out;
+    width: 100px;
+}
