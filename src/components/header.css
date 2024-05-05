@@ -60,6 +60,14 @@ header{
 }
 
 
+.header-lista a {
+    color: white;
+    text-decoration: none;
+    text-transform: none;
+    border-bottom: 2px solid transparent; /* Definindo a borda inicialmente transparente */
+    transition: border-bottom 0.5s ease-in-out; /* Adicionando uma transição suave */
+}
+
 
 
 .header-lista li {

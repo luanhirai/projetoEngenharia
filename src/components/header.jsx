@@ -44,6 +44,8 @@ export default function Header() {
                         <li><a href="#">Quem somos</a></li>
                         <li><a href="#">Doação</a></li>
                         <li><a href="#">Login</a></li>
+                        <p>© 2024 <a href="#">Carim</a></p>
+                        
                     </ul>
                 </nav>
             </div>
