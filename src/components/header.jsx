@@ -32,7 +32,7 @@ export default function Header() {
     return (
         <header>
             <div className="header-container ">
-                <img className="headerLogo" src={headerLogo} alt="logo do Carim" />
+                <a href="#"><img className="headerLogo" src={headerLogo} alt="logo do Carim" /></a>
 
                 <img className="logoMenu" onClick={alterarEstadoMenu} src={logoMenu} alt="logo do Menu" />
             </div>
@@ -40,8 +40,8 @@ export default function Header() {
             <div className="header-container-menu ">
                 <nav className={menuAberto ? 'menu-aberto' : 'menu-fechado'}>
                     <ul className="header-lista">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Quem somos</a></li>
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#">Transparência</a></li>
                         <li><a href="#">Doação</a></li>
                         <li><a href="#">Login</a></li>
                         <p>© 2024 <a href="#">Carim</a></p>
