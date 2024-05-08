@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'roboto';
+    font-family: 'BR Sonoma Semi', sans-serif;
 }
 
 header{
@@ -24,6 +24,54 @@ header{
     margin-right: 20px;
     cursor: pointer;
     transition: transform 0.5s ease-in;
+    display: none;
+}
+
+.header-itens{
+    width: 100%;
+}
+
+.header-itens a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    transition: color 0.2s ease-in-out;
+}
+
+.header-itens a:hover{
+    color: rgba(255, 255, 255, 0.341);
+}
+
+.button-apoiar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px none #1af0e1;
+    border-radius: 10px;
+    background-color: #1af0e1;
+    width: 120px;
+    height: 35px;
+    cursor: pointer;
+    color: #A2238E;
+
+    transition: background-color 0.5s ease-in-out, color 0.3s ease-in-out;
+}
+
+
+
+.button-apoiar:hover{
+    background-color: #A2238E;
+    color: white;
+}
+
+
+@media (max-width: 600px) {
+    .logoMenu {
+        display: block;
+    }
+    .header-itens a{
+        display: none;
+    }
 }
 
 
@@ -51,6 +99,7 @@ header{
     color: white;
     text-decoration: none;
     text-transform: none;
+    font-family: 'roboto mono';
 }
 
 

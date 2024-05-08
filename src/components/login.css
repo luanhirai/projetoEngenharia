@@ -35,7 +35,7 @@
 @font-face {
     font-family:caviarDreams ;
     src: url(../font/CaviarDreams.ttf);
-  }
+}
 .login-container h1{
     font-family: caviarDreams;
 }

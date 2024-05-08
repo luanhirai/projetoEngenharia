@@ -33,9 +33,16 @@ export default function Header() {
         <header>
             <div className="header-container ">
                 <a href="#"><img className="headerLogo" src={headerLogo} alt="logo do Carim" /></a>
-
+                <div className="header-itens d-flex justify-content-around">
+                    <div className="button-apoiar">Quero apoiar</div>
+                    <a href="#">Transparência</a>
+                    <a href="#">Doação</a>
+                    <a href="#">Login</a>
+                </div>
                 <img className="logoMenu" onClick={alterarEstadoMenu} src={logoMenu} alt="logo do Menu" />
             </div>
+
+            
             
             <div className="header-container-menu ">
                 <nav className={menuAberto ? 'menu-aberto' : 'menu-fechado'}>
@@ -45,7 +52,6 @@ export default function Header() {
                         <li><a href="#">Doação</a></li>
                         <li><a href="#">Login</a></li>
                         <p>© 2024 <a href="#">Carim</a></p>
-                        
                     </ul>
                 </nav>
             </div>
