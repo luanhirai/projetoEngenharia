@@ -1,19 +1,9 @@
-import logo from './logo.svg';
 import './App.css';
-import Header from './components/header';
-import Footer from './components/footer'
-import Login from './components/login'
 import './components/global.css'
+import Routes from './components/routes';
 
-function App() {
+export default function App() {
   return (
-    <>
-      <Header/>
-      <Login/>
-      <Footer/>
-      
-    </>
+      <Routes/>
   );
 }
-
-export default App;

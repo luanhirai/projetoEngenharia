@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./header.css";
 import headerLogo from "../assets/logo-carim.jpg"
 import logoMenu from "../assets/logo-menu.png"
+import { Link } from "react-router-dom";
+import Routes from './routes'
 
 
 export default function Header() {
@@ -32,12 +34,12 @@ export default function Header() {
     return (
         <header>
             <div className="header-container ">
-                <a href="#"><img className="headerLogo" src={headerLogo} alt="logo do Carim" /></a>
+                <a href="/"><img className="headerLogo" src={headerLogo} alt="logo do Carim" /></a>
                 <div className="header-itens d-flex justify-content-around">
-                    <div className="button-apoiar">Quero apoiar</div>
-                    <a href="#">Transparência</a>
-                    <a href="#">Doação</a>
-                    <a href="#">Login</a>
+                    <div className="button-apoiar"><strong>Quero apoiar</strong> </div>
+                    <Link to="/">Transparência</Link>
+                    <Link to="/">Doação</Link>
+                    <Link to="./login">Login</Link>
                 </div>
                 <img className="logoMenu" onClick={alterarEstadoMenu} src={logoMenu} alt="logo do Menu" />
             </div>
@@ -47,10 +49,10 @@ export default function Header() {
             <div className="header-container-menu ">
                 <nav className={menuAberto ? 'menu-aberto' : 'menu-fechado'}>
                     <ul className="header-lista">
-                        <li><a href="#">Início</a></li>
+                        <li><a href="/">Home</a></li>
                         <li><a href="#">Transparência</a></li>
                         <li><a href="#">Doação</a></li>
-                        <li><a href="#">Login</a></li>
+                        <li><Link to="./login">Login</Link></li>
                         <p>© 2024 <a href="#">Carim</a></p>
                     </ul>
                 </nav>

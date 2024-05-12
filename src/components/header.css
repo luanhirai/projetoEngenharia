@@ -35,11 +35,11 @@ header{
     text-decoration: none;
     color: white;
     display: block;
-    transition: color 0.2s ease-in-out;
+    transition: opacity 0.3s ease;
 }
 
 .header-itens a:hover{
-    color: rgba(255, 255, 255, 0.341);
+    opacity: 0.6;
 }
 
 .button-apoiar{
@@ -52,7 +52,8 @@ header{
     width: 120px;
     height: 35px;
     cursor: pointer;
-    color: #A2238E;
+    font-size: 13px;
+    color: #4a4758;
     transition: background-color 0.5s ease-in-out, color 0.3s ease-in-out;
 }
 
@@ -64,7 +65,7 @@ header{
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .logoMenu {
         display: block;
     }
